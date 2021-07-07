@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.distancematrix.ai/maps/api/distancematrix/json?destinations=Krasnodar&key=on3Cb5KJtGXFbgvXCjSc9yrdI6k1D&origins=Moscow
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Host:
+      - api.distancematrix.ai
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 07 Jul 2021 04:17:57 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '252'
+      Connection:
+      - keep-alive
+      Strict-Transport-Security:
+      - max-age=15724800; includeSubDomains
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+    body:
+      encoding: UTF-8
+      string: '{"destination_addresses":["Krasnodar, Krasnodar Krai, Russia"],"origin_addresses":["Moscow,
+        Russia"],"rows":[{"elements":[{"distance":{"text":"1348.7 km","value":1348734},"duration":{"text":"15
+        hr 32 min","value":55938},"status":"OK"}]}],"status":"OK"}'
+  recorded_at: Wed, 07 Jul 2021 04:17:56 GMT
+recorded_with: VCR 6.0.0
